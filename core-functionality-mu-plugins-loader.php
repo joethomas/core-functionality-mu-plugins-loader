@@ -1,11 +1,11 @@
 <?php
 /*
-	Plugin Name: Core Functionality
-	Description: This plugin contains must-use functionality for your site. This functionality would also need to persist if the WordPress theme being used is changed in the future.
+	Plugin Name: Core Functionality Plugins Loader
+	Description: This plugin loads must-use functionality plugins for your site. This functionality would need to persist if the WordPress theme being used is changed in the future.
 	Plugin URI: https://github.com/joethomas/core-functionality-mu-plugins-loader
-	Version: 1.1.0
+	Version: 1.1.1
 	Author: Joe Thomas
-	Author URI: http://joethomas.co
+	Author URI: https://github.com/joethomas
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -13,6 +13,7 @@
 // Prevent direct file access
 defined( 'ABSPATH' ) or exit;
 
+// Load Plugins
 function joe_mu_plugins_loader() {
 	if( ! defined( 'WPMU_PLUGIN_DIR' ) ) {
 		return;
